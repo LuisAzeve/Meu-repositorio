@@ -1,34 +1,50 @@
-Arquivo de HTML
 
-<script>
-
-//Imput
-
-
-
-
-//output
-
-alert("Atenção preencha todos os campos descritos")
+<Script>
+    // Outputs
+//alert
+//Console.log
+//Document.write
 
 
-</script>
+//imputs
 
-Modelo OSI
+var nome = prompt("Digite seu nome.");
+
+alert("Seja Bem-vindo Sr(a) " + nome );
 
 
-Camadas lógicas
-
-Camada de aplicação é a camada responsável pela aplicação dos dados, ou seja é a camada final que o usuario usa
-Camada de apresentação é a camada responsável por traduzir(para a linguagem do computador) as informações dos usuarios resultando na pesquisa
-Camada de sessão responsável pelo horário inicial e final da sessão (protocolo SIP dentro da camada)
-Camada de transporte é responsável por separar(segmentar) os dados 
-Camada de rede é responsável por "Empacotar" os dados (o endereço de ip está dentro dessa camada)
-
-Camadas fisicas
-
-camada de Enlace é responsável por determinar qual a tecnologia que será utilizada para encaminhar os dados (o endereçamento MAC está nessa camada)
-Camada fisica é responsável por transformar todos os dados em algo fisico     
+var PrimeiroBi = prompt("Digite a nota do primeiro bimestre");
+var SegundoBi = prompt("Digite a nota do segundo bimestre");
+var TerceiroBi = prompt("Digite a nota do terceiro bimestre");
+var QuartoBi = prompt("Digite a nota do quarto bimestre");
 
 
 
+var soma = (parseFloat(PrimeiroBi)+
+            parseFloat(SegundoBi)+
+            parseFloat(TerceiroBi)+
+            parseFloat(QuartoBi)
+            );
+
+var média = soma / 4; 
+
+
+document.write("A soma das suas notas é " + soma + "<br>");
+document.write("De acordo com suas notas sua média é " + média + "<br>")
+
+
+
+
+if(média < 6) { 
+    document.write("não foi desta vez..." + "<br>" + 
+    "mas você sempre pode tentar novamente boa sorte da próxima")} 
+else { 
+     document.write("Meus parabéns você foi aprovado(a) ficamos muito contentes com sua nova certificação")
+};
+
+
+
+
+
+
+</Script>
