@@ -1,50 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Média</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            text-align: center;
+            padding: 20px;
+        }
+        #output {
+            border: 2px solid #ccc;
+            background-color: #fff;
+            padding: 20px;
+            margin: 20px auto;
+            max-width: 400px;
+        }
+        #output p {
+            margin: 10px 0;
+        }
+        #output .aprovado {
+            color: green;
+            font-weight: bold;
+        }
+        #output .reprovado {
+            color: red;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div id="output">
+        <h2>Calculadora de Média</h2>
+        <script>
+            var nome = prompt("Digite seu nome.");
+            alert("Seja Bem-vindo Sr(a) " + nome );
 
-<Script>
-    // Outputs
-//alert
-//Console.log
-//Document.write
+            var primeiroBi = prompt("Digite a nota do primeiro bimestre");
+            var segundoBi = prompt("Digite a nota do segundo bimestre");
+            var terceiroBi = prompt("Digite a nota do terceiro bimestre");
+            var quartoBi = prompt("Digite a nota do quarto bimestre");
 
+            var soma = parseFloat(primeiroBi) + parseFloat(segundoBi) + parseFloat(terceiroBi) + parseFloat(quartoBi);
+            var média = soma / 4;
 
-//imputs
+            document.write("A soma das suas notas é " + soma + "<br>");
+            document.write("De acordo com suas notas, sua média é " + média.toFixed(2) + "<br>");
 
-var nome = prompt("Digite seu nome.");
-
-alert("Seja Bem-vindo Sr(a) " + nome );
-
-
-var PrimeiroBi = prompt("Digite a nota do primeiro bimestre");
-var SegundoBi = prompt("Digite a nota do segundo bimestre");
-var TerceiroBi = prompt("Digite a nota do terceiro bimestre");
-var QuartoBi = prompt("Digite a nota do quarto bimestre");
-
-
-
-var soma = (parseFloat(PrimeiroBi)+
-            parseFloat(SegundoBi)+
-            parseFloat(TerceiroBi)+
-            parseFloat(QuartoBi)
-            );
-
-var média = soma / 4; 
-
-
-document.write("A soma das suas notas é " + soma + "<br>");
-document.write("De acordo com suas notas sua média é " + média + "<br>")
-
-
-
-
-if(média < 6) { 
-    document.write("não foi desta vez..." + "<br>" + 
-    "mas você sempre pode tentar novamente boa sorte da próxima")} 
-else { 
-     document.write("Meus parabéns você foi aprovado(a) ficamos muito contentes com sua nova certificação")
-};
+            if (média < 6) { 
+                document.write("Não foi desta vez...<br> Mas você sempre pode tentar novamente. Boa sorte da próxima.<br>");
+                document.write('<span class="reprovado">Você foi reprovado(a).</span>');
+            } else { 
+                document.write("Meus parabéns! Você foi aprovado(a). Ficamos muito contentes com sua nova certificação.<br>");
+                document.write('<span class="aprovado">Você foi aprovado(a).</span>');
+            }
+        </script>
+    </div>
+</body>
 
 
 
 
 
 
-</Script>
+
+
+
+
+
+
+
+</html>
