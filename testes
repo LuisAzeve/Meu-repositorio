@@ -1,1 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="java.js"></script>
+    <title>Servidor do Felippe</title>
+</head>
+<body>
+    <section>
+    <h1>Este é meu servidor</h1>
+
+
+    <div class="subtitulo"> Contador </div>
+        <div class="Contador">
+            <br>
+            0
+        </div>
+
+
+
+    <div class="botao" onclick="clique()"><button>Contar+</button></div>
+    <br>    
+    </section>
+    &copy;Luis Felippe Ribeiro Azevedo
+    
+</body>
+</html>
 
