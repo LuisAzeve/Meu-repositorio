@@ -1,0 +1,35 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, sans-serif;
+    background: #f3f3f3;
+}
+
+section {
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+.Contador {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 1.1rem;
+    cursor: pointer;
+}
+.subtitulo{
+    font-size: 2rem;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
